@@ -1,0 +1,16 @@
+version: 2
+
+exposures:
+  - name: Executive Dashboard
+    type: dashboard
+    maturity: low
+    url: https://d6b9f4bf.us1a.app.preset.io/superset/explore/p/PLnJ2wY0GVv/
+    description: Executive Dashboard about Airbnb listings and hosts
+
+    depends_on:
+      - ref('dim_listings_w_hosts')
+      - ref('full_moon_reviews')
+
+    owner:
+      name: Sviat
+      email: hello@learndbt.com
